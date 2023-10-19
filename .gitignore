@@ -73,8 +73,9 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
+.env.production
 .env.development.local
+.env.development
 .env.test.local
 .env.production.local
 .env.local
@@ -100,12 +101,13 @@ dist
 # vuepress build output
 .vuepress/dist
 
+#duh !!
+package-lock.json
+mp3/
+
 # vuepress v2.x temp and cache directory
 .temp
 .cache
-
-# Docusaurus cache and generated files
-.docusaurus
 
 # Serverless directories
 .serverless/
@@ -128,3 +130,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.vercel
