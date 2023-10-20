@@ -45,7 +45,7 @@ export async function processing(req: NextApiRequest,
         res.status(400)
     }
 
-    const endpoint = process.env.MAIN_WEBSITE_API_PLUGIN + "create-google-user-post"
+    const endpoint = process.env.NEXT_PUBLIC_WP_API_PLUGIN + "create-google-user-post"
 
     var token = req.body.credential
     console.info("token afterGoogleSignIn: ", token)
@@ -81,7 +81,7 @@ async function signInUpWordpress(
 export async function signInUpWordpressServerSide(
     token: string) {
 
-    const endpoint = process.env.MAIN_WEBSITE_API_PLUGIN + "create-google-user-post"
+    const endpoint = process.env.NEXT_PUBLIC_WP_API_PLUGIN + "create-google-user-post"
 
     console.info("----------")
     console.info("sending: ", token)
